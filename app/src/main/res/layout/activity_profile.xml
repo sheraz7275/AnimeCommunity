@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.profile">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:background="@drawable/rectangle"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:onClick="goback"
+                    android:padding="@dimen/_4sdp"
+                    android:id="@+id/drawerOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/options_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_14sdp"
+
+
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/img_profile"
+                android:layout_below="@+id/rl_top"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:elevation="30dp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+
+
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/img2"
+                app:civ_border_width="2dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/txt_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complete Name"
+                android:layout_below="@+id/img_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/my_bold"
+                android:textColor="@color/appWhite"
+
+                />
+            <TextView
+                android:id="@+id/txt_profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:layout_below="@+id/txt_profile_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:textSize="@dimen/_9sdp"
+                android:fontFamily="@font/my_regular"
+                android:textColor="@color/appWhite"
+
+                />
+            <TextView
+                android:id="@+id/txt_memberSince"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member Since : Jan 17,2017"
+                android:layout_below="@+id/txt_profile_username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/_9sdp"
+                android:fontFamily="@font/my_regular"
+                android:textColor="#B4B4B4"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_customTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“Custom Title”"
+                android:layout_below="@+id/txt_memberSince"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_9sdp"
+                android:fontFamily="@font/my_regular"
+                android:textColor="#F8F871"
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

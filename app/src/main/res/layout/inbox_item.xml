@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@color/appWhite"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img_inbox"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:elevation="30dp"
+
+
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/img2"
+        app:civ_border_width="2dp"
+
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_Inbox_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_bold"
+            android:text="Full Name"
+            android:textColor="@color/appBlack1"
+            android:textSize="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_regular"
+                android:text="Last Update: "
+                android:textColor="@color/appLightGray"
+
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:id="@+id/txt_Inbox_lastupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_regular"
+                android:text="4 hr ago"
+                android:textColor="@color/appLightGray"
+                android:textSize="@dimen/_9sdp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/options_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_2sdp"
+        />
+
+
+</RelativeLayout>

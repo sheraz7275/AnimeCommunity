@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        >
+
+
+    <TextView
+        android:id="@+id/txt_postType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/my_bold"
+        android:text="Select Post Type"
+        android:textColor="@color/appBlack1"
+        android:textSize="@dimen/_13sdp"
+
+        />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/li_top"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/txt_postType"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="story">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/my_regular"
+                android:text="Story"
+                android:textColor="@color/appRed"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="story">
+
+            <ImageView
+                android:id="@+id/imgStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/unselect_story_icon_1" />
+
+            <TextView
+                android:id="@+id/txtStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgStory"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/my_regular"
+                android:text="Story"
+                android:textColor="@color/appRed"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="Cosplay">
+
+            <ImageView
+                android:id="@+id/imgCosply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/unselect_cosplay_icon_1" />
+
+            <TextView
+                android:id="@+id/txtCosplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgCosply"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/my_regular"
+                android:text="Cosplay"
+                android:textColor="@color/appRed"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="ArtWork">
+
+            <ImageView
+                android:id="@+id/imgArtwork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:onClick="ArtWork"
+                android:src="@drawable/unselect_artwork_icon_1" />
+
+            <TextView
+                android:id="@+id/txtArtWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgArtwork"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/my_regular"
+                android:text="Artwork"
+                android:textColor="@color/appRed"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/li_top"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+
+            android:onClick="AVM">
+
+            <ImageView
+                android:id="@+id/imgavm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/unslect_avm_icon_1" />
+
+            <TextView
+                android:id="@+id/txtavm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgavm"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/my_regular"
+                android:text="AMV"
+                android:textColor="@color/appRed"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:onClick="Reaction">
+
+            <ImageView
+                android:id="@+id/imgReaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/unselct_reaction_icon_1" />
+
+            <TextView
+                android:id="@+id/txtReaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgReaction"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/my_regular"
+                android:text="Reaction"
+                android:textColor="@color/appRed"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+            android:onClick="Review">
+
+            <ImageView
+                android:id="@+id/imgReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/unselect_review_icon_1" />
+
+            <TextView
+                android:id="@+id/txtReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgReview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/my_regular"
+                android:text="Review"
+                android:textColor="@color/appRed"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgSpoiler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:onClick="Spoiler"
+                android:src="@drawable/unselect_spoiler_icon_1" />
+
+            <TextView
+                android:id="@+id/txtSpoiler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgSpoiler"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/my_regular"
+                android:text="Spoiler"
+                android:textColor="@color/appRed"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+   </RelativeLayout>
+</RelativeLayout>

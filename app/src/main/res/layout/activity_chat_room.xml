@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/appWhite"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activites.chatRoom">
+
+
+    <android.support.design.widget.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@drawable/toolbar_bg"
+            android:layout_height="@dimen/_75sdp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:onClick="back"
+                    android:padding="@dimen/_4sdp"
+                    android:id="@+id/drawerOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_45sdp"
+                    android:textColor="@color/appWhite"
+                    android:fontFamily="@font/my_bold"
+                    android:textSize="@dimen/_13sdp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/notifocation_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_14sdp"
+
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_40sdp"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    
+    
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/appWhite"
+
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:id="@+id/rl_chatRoom"
+            android:onClick="goToChatRoom"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_red"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/txt_chatRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chatrooms"
+                android:textColor="@color/appWhite"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_8sdp"
+                android:fontFamily="@font/my_bold"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:id="@+id/rl_inbox"
+            android:onClick="goToInbox"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_gravity="center_vertical"
+
+
+            android:layout_width="match_parent"
+            android:background="@drawable/round_off_white"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_30sdp">
+
+
+            <TextView
+                android:id="@+id/txt_inbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My inbox"
+                android:textColor="@color/appDarkGray"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_8sdp"
+                android:fontFamily="@font/my_bold"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+
+</LinearLayout>

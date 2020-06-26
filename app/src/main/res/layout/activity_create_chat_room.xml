@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activites.CreateChatRoom">
+
+
+
+    <android.support.design.widget.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@drawable/toolbar_bg"
+            android:layout_height="@dimen/_75sdp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:onClick="backScreen"
+                    android:padding="@dimen/_4sdp"
+                    android:id="@+id/drawerOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Chatroom"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_45sdp"
+                    android:textColor="@color/appWhite"
+                    android:fontFamily="@font/my_bold"
+                    android:textSize="@dimen/_13sdp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/notifocation_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_14sdp"
+
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_40sdp"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Name"
+            android:textColor="@color/appBlack1"
+            android:fontFamily="@font/my_bold"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            />
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_off_white"
+            android:layout_height="@dimen/_55sdp">
+
+
+
+            <EditText
+                android:id="@+id/editShare"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:hint="Write Here"
+                android:textColorHint="@color/appDarkGray"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/my_regular"
+                android:textSize="@dimen/_12sdp"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/appBlack1"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_80sdp"
+                android:background="@android:color/transparent"
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Image/ Gif"
+            android:textColor="@color/appBlack1"
+            android:fontFamily="@font/my_bold"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            />
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_off_white"
+            android:layout_height="@dimen/_30sdp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/appLightGray"
+                android:textSize="@dimen/_9sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:fontFamily="@font/my_regular"
+
+                android:text="Select From gallery or paste here Video URL"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myattachment_icon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:onClick="attachment"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/create_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_28sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:fontFamily="@font/my_bold"
+                android:textColor="@color/appWhite"
+                android:layout_centerInParent="true"
+                android:elevation="@dimen/_5sdp"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

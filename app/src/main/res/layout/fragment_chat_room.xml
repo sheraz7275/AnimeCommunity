@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appWhite"
+    tools:context=".Fragments.ChatRoom_frag">
+    
+    
+
+    
+
+    <!-- TODO: Update blank fragment layout -->
+   <android.support.v7.widget.RecyclerView
+       android:layout_marginTop="@dimen/_3sdp"
+       android:layout_width="match_parent"
+       android:id="@+id/chatRoomRecyclerView"
+       android:layout_marginLeft="@dimen/_14sdp"
+       android:layout_marginRight="@dimen/_14sdp"
+       android:layout_marginBottom="@dimen/_14sdp"
+       android:layout_height="match_parent">
+
+
+
+   </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:elevation="@dimen/_5sdp"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="@dimen/_60sdp"
+        android:background="@drawable/chat_room_button"
+        android:layout_height="@dimen/_55sdp">
+
+
+        <ImageView
+            android:id="@+id/img_createChatRoom"
+
+            android:src="@drawable/addchat_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

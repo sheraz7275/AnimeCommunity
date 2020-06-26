@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activites.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:layout_marginTop="@dimen/_10sdp"
+            android:choiceMode="singleChoice">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:elevation="@dimen/_4sdp"
+        android:id="@+id/rl_search"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_off_white"
+        android:layout_height="@dimen/_55sdp">
+
+
+        <ImageButton
+            android:id="@+id/btnDropDown"
+            android:onClick="btnDropDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/attachment_icon"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+            />
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editShare"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:hint="Write Here"
+            android:textColorHint="@color/appDarkGray"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/my_regular"
+            android:textSize="@dimen/_12sdp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/appBlack1"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:layout_marginRight="@dimen/_60sdp"
+            android:background="@android:color/transparent"
+
+            />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_icon"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mparent"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_curve"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bottom_bg" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_topIcons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_36sdp"
+                    android:layout_marginTop="@dimen/_23sdp"
+                    android:onClick="selectPostType"
+                    android:src="@drawable/categorize_posts" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_36sdp"
+
+                    android:layout_marginTop="@dimen/_23sdp"
+                    android:onClick="ChatRoom"
+                    android:src="@drawable/messages" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="newPost"
+                    android:src="@drawable/new_post" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+
+            android:id="@+id/bottomsheet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_210sdp"
+            android:layout_below="@id/rl_parent"
+            android:background="@color/appWhite"
+            android:visibility="gone"
+            >
+
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bottomRecyclerView"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_35sdp"
+
+
+                android:layout_marginRight="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_25sdp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
