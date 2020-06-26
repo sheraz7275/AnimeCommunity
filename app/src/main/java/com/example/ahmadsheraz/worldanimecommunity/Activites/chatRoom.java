@@ -32,6 +32,8 @@ public class chatRoom extends AppCompatActivity {
         setContentView(R.layout.activity_chat_room);
 
 
+
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
